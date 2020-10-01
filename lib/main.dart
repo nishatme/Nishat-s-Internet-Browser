@@ -39,89 +39,89 @@ class _MeinHomePageState extends State<MeinHomePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
+              // Flexible(
+              //   flex: 1,
+              //   child: Container(
+              //     color: Colors.teal,
+              //     child: Padding(
+              //       padding: const EdgeInsets.all(4.0),
+              //       child: Row(
+              //         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              //         children: <Widget>[
+              //           Flexible(
+              //             flex: 2,
+              //             child: Text(
+              //               "https://",
+              //               style: TextStyle(
+              //                 color: Colors.white,
+              //                 fontSize: 20.0,
+              //               ),
+              //             ),
+              //           ),
+              //           Flexible(
+              //             flex: 4,
+              //             child: TextField(
+              //               autocorrect: false,
+              //               style: TextStyle(
+              //                 color: Colors.white,
+              //                 fontSize: 20.0,
+              //               ),
+              //               decoration: InputDecoration(
+              //                 enabledBorder: UnderlineInputBorder(
+              //                   borderSide: BorderSide(
+              //                     style: BorderStyle.solid,
+              //                     color: Colors.white,
+              //                     width: 2,
+              //                   ),
+              //                 ),
+              //                 focusedBorder: UnderlineInputBorder(
+              //                   borderSide: BorderSide(
+              //                     style: BorderStyle.solid,
+              //                     color: Colors.white,
+              //                     width: 2,
+              //                   ),
+              //                 ),
+              //               ),
+              //               controller: _teController,
+              //             ),
+              //           ),
+              //           Flexible(
+              //             flex: 1,
+              //             child: Center(
+              //               child: IconButton(
+              //                 icon: Icon(
+              //                   Icons.arrow_forward,
+              //                   color: Colors.white,
+              //                 ),
+              //                 onPressed: () {
+              //                   String finalURL = _teController.text;
+              //                   if (!finalURL.startsWith('https://')) {
+              //                     finalURL = "https://" + finalURL;
+              //                   }
+              //                   if (_webViewController != null) {
+              //                     updateLoading(true);
+              //                     _webViewController
+              //                         .loadUrl(finalURL)
+              //                         .then((onValue) {})
+              //                         .catchError((e) {
+              //                       updateLoading(false);
+              //                     });
+              //                   }
+              //                 },
+              //               ),
+              //             ),
+              //           ),
+              //         ],
+              //       ),
+              //     ),
+              //   ),
+              // ),
               Flexible(
-                flex: 1,
-                child: Container(
-                  color: Colors.teal,
-                  child: Padding(
-                    padding: const EdgeInsets.all(4.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: <Widget>[
-                        Flexible(
-                          flex: 2,
-                          child: Text(
-                            "https://",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20.0,
-                            ),
-                          ),
-                        ),
-                        Flexible(
-                          flex: 4,
-                          child: TextField(
-                            autocorrect: false,
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20.0,
-                            ),
-                            decoration: InputDecoration(
-                              enabledBorder: UnderlineInputBorder(
-                                borderSide: BorderSide(
-                                  style: BorderStyle.solid,
-                                  color: Colors.white,
-                                  width: 2,
-                                ),
-                              ),
-                              focusedBorder: UnderlineInputBorder(
-                                borderSide: BorderSide(
-                                  style: BorderStyle.solid,
-                                  color: Colors.white,
-                                  width: 2,
-                                ),
-                              ),
-                            ),
-                            controller: _teController,
-                          ),
-                        ),
-                        Flexible(
-                          flex: 1,
-                          child: Center(
-                            child: IconButton(
-                              icon: Icon(
-                                Icons.arrow_forward,
-                                color: Colors.white,
-                              ),
-                              onPressed: () {
-                                String finalURL = _teController.text;
-                                if (!finalURL.startsWith('https://')) {
-                                  finalURL = "https://" + finalURL;
-                                }
-                                if (_webViewController != null) {
-                                  updateLoading(true);
-                                  _webViewController
-                                      .loadUrl(finalURL)
-                                      .then((onValue) {})
-                                      .catchError((e) {
-                                    updateLoading(false);
-                                  });
-                                }
-                              },
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              Flexible(
-                flex: 9,
+                flex: 10,
                 child: Stack(
                   children: <Widget>[
                     WebView(
-                      initialUrl: 'https://duckduckgo.com',
+                      initialUrl: 'https://english-bangla.com',
                       onPageFinished: (data) {
                         updateLoading(false);
                       },
